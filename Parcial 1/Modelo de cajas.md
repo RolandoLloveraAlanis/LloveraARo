@@ -3,15 +3,14 @@
 El modelo de cajas o "box model" es seguramente la característica más importante del lenguaje de hojas de estilos CSS, ya que condiciona el diseño de todas las páginas web. El modelo de cajas es el comportamiento de CSS que hace que todos los elementos de las páginas se representen mediante cajas rectangulares.
 
 Las cajas de una página se crean automáticamente. Cada vez que se inserta una etiqueta HTML, se crea una nueva caja rectangular que encierra los contenidos de ese elemento. La siguiente imagen muestra las tres cajas rectangulares que crean las tres etiquetas HTML que incluye la página:
-! https://uniwebsidad.com/static/libros/imagenes/css/f0402.gif
-
+!(https://uniwebsidad.com/static/libros/imagenes/css/f0402.gif)
 
 Las cajas de las páginas no son visibles a simple vista porque inicialmente no muestran ningún color de fondo ni ningún borde. La siguiente imagen muestra las cajas que forman la página web de http://www.alistapart.com/ después de forzar a que todas las cajas muestren su borde:
-! https://uniwebsidad.com/static/libros/imagenes/css/f0401.gif
+!(https://uniwebsidad.com/static/libros/imagenes/css/f0401.gif)
 
 
 Los navegadores crean y colocan las cajas de forma automática, pero CSS permite modificar todas sus características. Cada una de las cajas está formada por seis partes, tal y como muestra la siguiente imagen:
-! https://uniwebsidad.com/static/libros/imagenes/css/f0403.gif
+!(https://uniwebsidad.com/static/libros/imagenes/css/f0403.gif)
 
 Las partes que componen cada caja y su orden de visualización desde el punto de vista del usuario son las siguientes:
 
