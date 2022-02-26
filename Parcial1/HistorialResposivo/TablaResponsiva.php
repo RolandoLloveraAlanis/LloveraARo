@@ -10,14 +10,15 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
 
 	<title>Rolando Llovera Alanis</title>
 </head>
 <body>
 
-  <div>
+  
   <div class="container mb-3 mt-3">
-  <table id="example" class="table table-striped " style="width:100%">
+  <table id="example" class="resp">
         <thead>
             <tr>
                 <th>NIVEL</th>
@@ -54,19 +55,19 @@
                 <td>2015-2018</td>
                 <td>Cbtis 137</td>
                 <td>Certificado de preparatoria,titulo de tecnico en programacion, reconocimiento por concurso de la OMI</td>
-                <td></td>
+                <td>NA</td>
             </tr>
                 <tr>
                 <td>Educacion superior</td>
                 <td>2018-...</td>
                 <td>Instituo Tecnologico de Nuevo Laredo</td>
-                <td></td>
-                <td></td>
+                <td>NA</td>
+                <td>NA</td>
             </tr>
 	   </tbody>
     </table>
     </div>
-    </div>
+    
 
     <!-- Optional JavaScript; choose one of the two! -->
 
