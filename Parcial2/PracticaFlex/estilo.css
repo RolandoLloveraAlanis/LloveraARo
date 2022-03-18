@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.contenedor{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+  background: linear-gradient(to bottom right, blue, white);
+    flex-direction: row;
+    justify-content:center;
+    align-items: flex-start;
+}
+
+.caja{
+    width: 150px;
+    height: 150px;
+    background-color: brown;
+    margin: 10px;
+    color: white;
+    order: 1;
+}
