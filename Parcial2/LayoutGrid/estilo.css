@@ -1,0 +1,42 @@
+* 
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor 
+{
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    background:   linear-gradient(to bottom, blue, white 80%, orange);
+    grid-template-columns: 48% 48%;
+    grid-template-rows: 20% 33% 33% 14%;
+    justify-content: center;
+    align-content: center;
+}
+
+.caja 
+{
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    border-style: solid;
+    border-color: blue;
+    border-width: 4spx;
+    margin: 5px;
+    padding: 5px 3%;
+}
+
+#header
+{
+    grid-column: 1 /span 2;
+    background-color: violet;
+}
+
+#footer
+{
+    grid-column: 1 /span 2;
+    background-color: violet;
+}
