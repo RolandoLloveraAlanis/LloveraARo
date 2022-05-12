@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Ajax Get</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="ajaxjs.js"></script>
+</head>
+<body>
+    <h2>Cálculo de cuadrado</h2>
+    <form id="formulario" method="GET" action="ajaxphp.php">
+        <label for="num">Ingresa tu año de nacimiento</label>
+        <input type="text" id="num" name="num" size="10"/>
+        <input type="button" id="ajax" value="Calcular"/>
+    </form>
+    <h2>Tu edad :</h2>
+    <div id='resultado'></div>
+</body>
+</html>
