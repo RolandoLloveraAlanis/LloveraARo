@@ -1,0 +1,130 @@
+<!doctype html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="iconos/1.png">
+
+    <title>SharkSmart</title>
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="jumbotron.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <!-- Modal insertar -->
+          
+  <!--Fin Modal insertar -->
+
+
+
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="#">SharkSmart</a>
+    <img src="iconos/1.png" align="center" height="40" width="40">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="iniciodesesion.php">Inicio de sesion <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="nuevoregistro.php" >Registrate</a>
+        </li>
+
+      </ul>
+      
+    </div>
+  </nav>
+
+  <main role="main">
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <h1 class="display-3">¿Quienes somos?</h1>
+      </div>
+    </div>
+
+
+
+   <h2>Calculo de edad</h2>
+    <form id="formulario" method="GET" action="ajaxphp.php">
+        <label for="num">Ingresa tu año de nacimiento</label>
+        <input type="text" id="num" name="num" size="10"/>
+        <input type="button" id="ajax" value="Calcular"/>
+    </form>
+    
+    <div id='resultado'></div>
+
+
+
+
+
+
+
+
+   <div class="container">
+    <!-- Example row of columns -->
+    <div class="row">
+      <div class="col-md-4">
+        <h2>Vision</h2>
+        <p> Ser una empresa de reconocido prestigio nacional e internacional con una página que favorezca la educación, con excelencia de aprendizaje académico en el área matemática, soporte a estudiantes de nivel primaria, donde el mejoramiento continuo y el aprendizaje sean factores clave para su desarrollo educativo.</p>
+
+      </div>
+      <div class="col-md-4">
+        <h2>Mision</h2>
+        <p>Ser un apoyo para la educación de aquellos niños/jóvenes que fueron afectados por la pandemia conocida como el virus covid-19; proporcionarles un espacio donde puedan desarrollar y mejorar sus habilidades matemáticas de manera progresiva.</p>
+
+      </div>
+      <div class="col-md-4">
+        <h2>Valores</h2>
+        <p>
+          Calidad:<br>
+          Ofrecer a los usuarios el mejor servicio posible, la educación es un fundamental y más para los niños/jóvenes que han sido afectados por situaciones como el covid-19.<br>
+
+          Confianza:<br>
+          Es importante para la empresa tener la confianza de los usuarios para ello nos comprometemos a impartir una educación de calidad que les brinde la seguridad necesaria a nuestros consumidores. <br>
+
+          Competitividad:<br>
+        La empresa está preparada para realizar el esfuerzo necesario para lograr ser el primero entre los competidores de la categoría de enseñanza matemática.</p>
+
+      </div>
+    </div>
+
+    <hr>
+
+  </div> <!-- /container -->
+
+</main>
+
+<footer class="container">
+  <p>&copy; SharkSmart 2020-2022</p>
+</footer>
+
+    <!-- Bootstrap core JavaScript
+      ================================================== -->
+      <!-- Placed at the end of the document so the pages load faster -->
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+       <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="jquery-slim.min.js"><\/script>')</script>
+        <script src="popper.min.js"></script>
+        <script src="bootstrap.min.js"></script>
+          <script src="ajaxjs.js"></script>
+
+        <script>
+          $(document).ready(function(){
+            $('#registro').click(function(){
+              $('#alerta').show();
+            });
+          });
+
+        </script>
+      </body>
+      </html>
