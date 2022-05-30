@@ -14,6 +14,7 @@
    function refrescar(objeto) 
    {
     console.log(objeto);
+    $('#idpersona').val(objeto.idpersona);
     $('#nombre').val(objeto.nombre);
     $('#paterno').val(objeto.paterno);
     $('#materno').val(objeto.materno);

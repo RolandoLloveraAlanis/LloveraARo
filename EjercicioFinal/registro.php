@@ -8,7 +8,7 @@ $sql = $con->query("SELECT * FROM usuario WHERE id = '$id'");
 
 $row = $sql->fetch_array();
 
-
+$registro['idpersona']  = $row['id'];
 $registro['nombre']  = $row['nombre'];
 $registro['paterno'] =$row['apellidop'];
 $registro['materno'] =$row['apellidom'];

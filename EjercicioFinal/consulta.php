@@ -27,15 +27,24 @@
 
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
       <img src="iconos/1.png" align="center" height="40" width="40">
-      <a class="navbar-brand" href="crud.php" >REGISTRO</a>
+      <a class="navbar-brand" href="consulta.php" >REGISTRO</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
     </nav>
     <!-- Modal insertar -->
+    
+    <form class="form">
 
-    <form  method="post" action="registrosql.php">
-  
+
+
+      <div class="row">
+         <div class="col-md-2">            
+          <label  for="control1" class="col-form-label">ID</label>
+          <input type="text" name="idpersona" id="idpersona" class="form-control"  readonly >    
+        </div>
+      </div>
+     
       <div class="row">
         <div class="col-md-4">            
           <label  for="control1" class="col-form-label">Nombre(s):</label>
@@ -50,6 +59,7 @@
           <input type="text" name="materno" id="materno" class="form-control"  required="">
         </div>
       </div>
+
 
       <div class="row">
         <div class="col-md-3">            
@@ -68,20 +78,14 @@
       </div>
     </div>
 
-
+    
     <div class="row">
-      <div class="col-md-4">            
-        <label  for="especialidad1" class="col-form-label">Tipo de tarjeta</label>
-        <select  name="tarjeta" id="tarjeta" class="form-control"  required="">
-          <option value="mastercard">Mastercard</option>
-          <option value="visa">Visa</option>
-        </select>
-      </div>
+     
       <div class="col-md-4">            
         <label  for="especialidad1" class="col-form-label">Numero de tarjeta</label>
         <input type="text" name="ntarjeta" id="ntarjeta" class="form-control"  required="">
       </div>
-
+      
 
       <div class="col-md-2">            
         <label  for="especialidad1" class="col-form-label">PIN</label>
@@ -92,16 +96,19 @@
         <input type="text" name="vigencia" id="vigencia" class="form-control"  required="">
       </div>
     </div>
-
+    
     <div class="modal-footer">
-      <button type="button" id= "cancelar" class="btn btn-secondary" data-dismiss="modal" title="Se cancela la operacion">Cancelar</button>
-
-      <button type="submit" class="btn btn-primary" title="Se registraran tus datos para darte de alta">Registrarse</button><br>
-     
+   
+      <button id="btnconsulta" type="button" class="btn btn-primary" title="Obtiene Json">Traer datos</button>
       
 
     </div>
-
+    <div id="alerta" class="alert alert-warning alert-dismissible collapse" role="alert">
+      <strong>FELICIDADES</strong> se te ha registrado con exito
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
   </form>
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 

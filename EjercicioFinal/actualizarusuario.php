@@ -1,3 +1,26 @@
+<?php
+
+
+include("conexion.php");
+$con = conectar();
+
+
+$rol = $_GET['id'];
+
+
+
+
+
+
+$sql = "SELECT * FROM usuario WHERE id = '$rol'";
+$query = mysqli_query($con, $sql);
+
+$row = mysqli_fetch_array($query);
+
+?>
+
+
+
 <!doctype html>
   <html lang="en">
   <head>
@@ -34,37 +57,38 @@
     </nav>
     <!-- Modal insertar -->
 
-    <form  method="post" action="registrosql.php">
+    <form  method="post" action="actualizacion.php">
   
       <div class="row">
-        <div class="col-md-4">            
+        <div class="col-md-4">
+        <input type="hidden" name="usuario_id" id="usuario_id" class='form-control' maxlength="100" required value="<?php echo $row['id'] ?>">            
           <label  for="control1" class="col-form-label">Nombre(s):</label>
-          <input type="text" name="nombre" id="nombre" class="form-control"  required="">
+          <input type="text" name="nombre" id="nombre" class="form-control"  required="" value="<?php echo $row['nombre'] ?>" >
         </div>
         <div class="col-md-4">            
           <label  for="grupo1" class="col-form-label">Apellido Paterno:</label>
-          <input type="text" name="paterno" id="paterno" class="form-control"  required="">
+          <input type="text" name="paterno" id="paterno" class="form-control"  required="" value="<?php echo $row['apellidop'] ?>" >
         </div>
         <div class="col-md-4">            
           <label  for="nombre1" class="col-form-label">Apellido Materno:</label>
-          <input type="text" name="materno" id="materno" class="form-control"  required="">
+          <input type="text" name="materno" id="materno" class="form-control"  required="" value="<?php echo $row['apellidom'] ?>" >
         </div>
       </div>
 
       <div class="row">
         <div class="col-md-3">            
           <label  for="especialidad1" class="col-form-label">Edad</label>
-          <input type="text" name="edad" id="edad" class="form-control"  required="">
+          <input type="text" name="edad" id="edad" class="form-control"  required="" value="<?php echo $row['edad'] ?>">
         </div>
       </div>
       <div class="row">
        <div class="col-md-6">            
         <label  for="especialidad1" class="col-form-label">Correo electronico:</label>
-        <input type="text" name="correo" id="correo" class="form-control"  required="">
+        <input type="text" name="correo" id="correo" class="form-control"  required="" value="<?php echo $row['correoelectronico'] ?>">
       </div>
       <div class="col-md-6">            
         <label  for="especialidad1" class="col-form-label">Contraseña:</label>
-        <input type="password" name="pass" id="pass" class="form-control" required="">
+        <input type="password" name="pass" id="pass" class="form-control" required="" value="<?php echo $row['password'] ?>">
       </div>
     </div>
 
@@ -79,24 +103,23 @@
       </div>
       <div class="col-md-4">            
         <label  for="especialidad1" class="col-form-label">Numero de tarjeta</label>
-        <input type="text" name="ntarjeta" id="ntarjeta" class="form-control"  required="">
+        <input type="text" name="ntarjeta" id="ntarjeta" class="form-control"  required="" value="<?php echo $row['tarjeta'] ?>">
       </div>
 
 
       <div class="col-md-2">            
         <label  for="especialidad1" class="col-form-label">PIN</label>
-        <input type="password" name="pin" id="pin" class="form-control"  required="">
+        <input type="password" name="pin" id="pin" class="form-control"  required="" value="<?php echo $row['pin'] ?>">
       </div>
       <div class="col-md-2">            
         <label  for="especialidad1" class="col-form-label">Vigencia</label>
-        <input type="text" name="vigencia" id="vigencia" class="form-control"  required="">
+        <input type="text" name="vigencia" id="vigencia" class="form-control"  required="" value="<?php echo $row['vigencia'] ?>">
       </div>
     </div>
 
     <div class="modal-footer">
-      <button type="button" id= "cancelar" class="btn btn-secondary" data-dismiss="modal" title="Se cancela la operacion">Cancelar</button>
-
-      <button type="submit" class="btn btn-primary" title="Se registraran tus datos para darte de alta">Registrarse</button><br>
+      
+      <button type="submit" class="btn btn-primary" title="Se registraran tus datos para darte de alta">Actualizar</button><br>
      
       
 
